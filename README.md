@@ -1,9 +1,14 @@
 1111-game
 =========
 
-A fun simple number game, written in Java.
+A fun simple number game, runs in Java SE 1.8
 
-Workflow of the game: 
+By Vicky Qijing Zhang, a beginner in Java and Python.
+
+=========
+
+How this game works:
+
 1) This game starts with two players, each having two numbers in their two hands, one hand displaying one number. At initialization, they are both 1. 
 
 2) - If player A uses his one hand to hit player B’s one hand, the value on player A’s hand is renewed to be the sum of the two numbers on two hands. If the sum exceeds 10, take the last digit, or MOD 10. 
