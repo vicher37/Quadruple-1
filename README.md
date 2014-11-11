@@ -4,9 +4,9 @@
 A fun simple number game, runs in Java SE 1.8
 
 By Vicky Qijing Zhang, a beginner in Java and Python.
-=========
 
 How this game works:
+=========
 
 1) This game starts with two players, each having two numbers in their two hands, one hand displaying one number. At initialization, they are both 1. 
 
