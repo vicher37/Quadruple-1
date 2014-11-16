@@ -78,6 +78,11 @@ public class Player
             if (input.equals("h"))
                 {
 
+                    if (this.preventiveCheck(playerb) != -1)
+                    {
+                        System.out.println("Our preventive check process indicates your opponent might win if you move in a certain way now.");
+                        System.out.println("You should not move the hand that has the index of " + this.preventiveCheck(playerb) + ", otherwise the opponent can win.");
+                    }
                     System.out.println("Please indicate which hand of yours you want to move, 0 for left, 1 for right");
                     in = new Scanner(System.in);
                     int meNum = in.nextInt();
@@ -294,6 +299,27 @@ public class Player
         return playerNumToPlay;
         
     }
-    
+     /**
+     * run a preventive check to make sure this move will not let the opponent win.
+     * 
+     * @param  void
+     * @return  the index of hand you should not move, otherwise the opponent will win
+     */
+    public int preventiveCheck(Player playerb)
+    {
+        int number = -1;
+        for (int i = 0; i < this.list.size(); i++)
+        {
+            for (int j = 0; j < playerb.list.size(); j++)
+            {
+                int newA = this.list.get(i) + playerb.list.get(j);
+                if (newA + playerb.list.get(0) == 10 || newA + playerb.list.get(1) == 10)
+                {
+                    number = i;
+                }
+            }
+        }
+        return number;
+    }
 
 }
