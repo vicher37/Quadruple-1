@@ -17,10 +17,10 @@ public class Game {
 		System.out.println("It's your turn now.");
 		
 		System.out.print("Player A: ");
-        playera.returnResult();
+        	playera.returnResult();
                 
-        System.out.print("Player B: ");
-        playerb.returnResult();
+        	System.out.print("Player B: ");
+        	playerb.returnResult();
 		System.out.println("If you want to make the hit yourself, press h. ");
 		System.out.println("If you want the computer to make a more rational move for you, press r.");
 			
