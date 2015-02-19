@@ -1,3 +1,5 @@
+## This file outlines the general process of the game, and also initializes a new game.
+
 import java.util.Scanner;
 
 public class Game {
