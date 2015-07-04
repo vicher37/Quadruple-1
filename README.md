@@ -5,6 +5,8 @@ A fun numerical game, runs in Java SE 1.8
 
 By Vicky Qijing Zhang, a beginner in Java and Python.
 
+<em>NOTE: This Java version is obsolete. For the latest version written in Javascript, please visit www.quadruple1.com</em>
+
 How this game works:
 =========
 0) Open Player.java and Game.java in Eclipse or any other IDE of your choice. Run main method in Game.java and the game starts in the console!
